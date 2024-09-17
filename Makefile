@@ -11,7 +11,7 @@ SRC = main.c \
 
 OBJ = $(SRC:.c=.o)
 
-CC = gcc
+CC = cc
 CFLAGS = -Wall -Wextra -Werror
 
 all: $(NAME)

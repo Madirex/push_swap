@@ -4,8 +4,8 @@ int main(int argc, char **argv)
 {
     t_stack *stack_a;
     t_stack *stack_b;
-    const int max_int;
-    const int min_int;
+    int max_int;
+    int min_int;
     int i;
 
     stack_a = NULL;
@@ -31,13 +31,8 @@ int main(int argc, char **argv)
         i++;
     }
 
-    if (is_sorted(stack_a))
-    {
-        write(1, "Error\n", 6);
-        return 0;
-    }
-
-    sort_stack(&stack_a, &stack_b);
+    if (!is_sorted(stack_a))
+        sort_stack(&stack_a, &stack_b);
 
     // Liberar memoria
     while (stack_a) {
