@@ -27,7 +27,7 @@ typedef struct s_stack
 	struct s_stack	*next;
 }	t_stack;
 
-int		ft_atoi(const char *str);
+long	ft_atol(const char *str);
 int		abs(int nb);
 void	ft_putstr(char *str);
 int		is_num(char *av);

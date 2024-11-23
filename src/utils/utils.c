@@ -29,10 +29,10 @@ int	is_num(char	*str)
 	return (1);
 }
 
-int	ft_atoi(const char *str)
+long	ft_atol(const char *str)
 {
-	int	sign;
-	int	value;
+	int			sign;
+	long		value;
 
 	sign = 1;
 	value = 0;

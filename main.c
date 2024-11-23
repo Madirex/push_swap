@@ -73,7 +73,7 @@ static void	push_swap(t_stack **stack_a, t_stack **stack_b)
 static void	add_nums_to_stack(char *input_str, t_stack **stack_a)
 {
 	char		**split_nums;
-	long int	num;
+	long		num;
 	int			i;
 
 	split_nums = ft_split(input_str, ' ');
@@ -82,7 +82,7 @@ static void	add_nums_to_stack(char *input_str, t_stack **stack_a)
 	{
 		if (is_num(split_nums[i]))
 		{
-			num = ft_atoi(split_nums[i]);
+			num = ft_atol(split_nums[i]);
 			if (num > INT_MAX || num < INT_MIN)
 			{
 				free_stacks(stack_a, NULL);
